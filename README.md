@@ -11,9 +11,9 @@ Los datos han sido anonimizados:
 - no incluyen nombres reales, únicamente aliases elegidos por los propios encuestados.
 - los valores del campo `tiempo` han sido previamente normalizados, mostrando solo valores entre 0 y 1, calculados en función del tiempo total declarado por el encuestado.
 
-## Datos
+## Archivos de datos
 
-### Datos originales `gephi-raw.csv`
+### Datos originales gephi-raw.csv
 
 El archivo `gephi-raw.csv` contiene los datos recopilados por la encuesta creada en Google Forms, con algunas modificaciones de formato como son la división de la lista de lugares de residencia en varias filas independientes.
 
@@ -26,7 +26,7 @@ Los campos del archivo `gephi-raw.csv` son:
 
 Los valores del campo `tiempo` en la versión del archivo disponible en el repositorio han sido reemplazados por valores normalizados, para aumentar el grado de anonimato de los datos. Este cambio no tiene ningún impacto en el posterior procesado de los datos.
 
-### Datos con información geográfica `gephi-total.csv`
+### Datos con información geográfica, gephi-total.csv
 
 El archivo `gephi-total.csv` es el resultado de procesar los datos del archivo `gephi-raw.csv` con el script `resolve.py`.
 
@@ -40,7 +40,7 @@ Los campos del archivo `gephi-final.csv` son:
 - `longitud`: longitud asociada al lugar de residencia
 - `tiempo_norm`: normalización del campo `tiempo`, resultado de dividir este campo por la suma de todos los periodos de tiempo reportados por el participante
 
-### Archivo con nodos Gephi, `gephi-nodes.csv`
+### Archivo con nodos Gephi, gephi-nodes.csv
 
 El archivo `gephi-nodes.csv` define los nodos del grafo georreferenciado en formato _Gephi_. Cada nodo representa una ciudad, incluyendo sus coordenadas geográficas, y el sumatorio del tiempo reportado por todos los encuestados para dicha ciudad. Este archivo es el resultado de aplicar el scrip `refactor.py` al archivo `gephi-total.csv`.
 
@@ -52,7 +52,7 @@ Los campos del archivo `gephi-nodes.csv` son:
 - `long`: longitud
 - `time`: sumatorio de tiempos (normalizados) declarados para el nodo
 
-### Archivo con aristas Gephi, `gephi-edges.csv`
+### Archivo con aristas Gephi, gephi-edges.csv
 
 El archivo `gephi-edges.csv` define las aristas del grafo georreferenciado en formato _Gephi_. Cada nodo une una ciudad con la siguiente en el que el encuestado a residido. Este archivo es el resultado de aplicar el scrip `refactor.py` al archivo `gephi-total.csv`.
 
@@ -78,7 +78,7 @@ source ./venv/bin/active
 pip3 install -r requirements.txt
 ```
 
-### Script `resolve.py`
+### Script resolve.py
 
 El script `resolve.py` procesa el archivo `gephi-raw.csv` y genera `gephi-final.csv`.
 
@@ -86,6 +86,6 @@ El script `resolve.py` hace uso de la librería `geopy` para obtener la latitud 
 
 La normalización de los periodos de tiempo está basada en la librería para análisis datos `pandas`.
 
-### Script `refactor.py`
+### Script refactor.py
 
 El script `refactor.py` procesa el archivo `gephi-total.csv` y genera los archivos `gephi-nodes` y `gephi-edges.csv`, los cuales definen un grafo georreferenciado que puede ser representado usando Gephi.
