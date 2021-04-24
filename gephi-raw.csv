@@ -1,0 +1,50 @@
+nombre,lugar,país,tiempo
+Arqueoclío,Bilbao,España,0.769230769230769
+Arqueoclío,Pau,Francia,0.184615384615385
+Arqueoclío,Oviedo,España,0.015384615384615
+Arqueoclío,Clermont Ferrand,Francia,0.030769230769231
+Naïve Bayes,Los Palacios y Villafranca,España,0.675675675675676
+Naïve Bayes,Sevilla,Espana,0.054054054054054
+Naïve Bayes,Los Palacios y Villafranca,España,0.081081081081081
+Naïve Bayes,Amsterdam,Países Bajos,0.189189189189189
+Ladelsuroeste,Zafra,España,0.5
+Ladelsuroeste,Sevilla,España,0.305555555555556
+Ladelsuroeste,Badajoz,España,0.027777777777778
+Ladelsuroeste,Zafra,España,0.166666666666667
+María Diva,Dos Hermanas,España,0.833333333333333
+María Diva,Gante,Bélgica,0.041666666666667
+María Diva,Dos Hermanas,España,0.041666666666667
+María Diva,Liverpool,Reino Unido,0.041666666666667
+María Diva,Sevilla,España,0.041666666666667
+Tomcody,Utrillas,España,0.45
+Tomcody,Zaragoza,España,0.55
+Cofiliquili,Alcantarilla,España,0.054054054054054
+Cofiliquili,Sevilla,España,0.081081081081081
+Cofiliquili,Madrid,España,0.027027027027027
+Cofiliquili,Sevilla,España,0.405405405405405
+Cofiliquili,Perugia,Italia,0.027027027027027
+Cofiliquili,Sevilla,España,0.027027027027027
+Cofiliquili,Pavía,Italia,0.027027027027027
+Cofiliquili,Sevilla,España,0.189189189189189
+Cofiliquili,Jaén,España,0.027027027027027
+Cofiliquili,Málaga,España,0.027027027027027
+Cofiliquili,Aracena,España,0.108108108108108
+Lorestan,Nápoles,Italia,0.666666666666667
+Lorestan,Paris,Francia,0.027777777777778
+Lorestan,Salerno,Italia,0.027777777777778
+Lorestan,Milan,Italia,0.027777777777778
+Lorestan,Roma,Italia,0.083333333333333
+Lorestan,Madrid,España,0.166666666666667
+Gonzalo Romero,Madrid,España,0.075700227100681
+Gonzalo Romero,Fregenal de la Sierra,España,0.60560181680545
+Gonzalo Romero,Sevilla,España,0.264950794852384
+Gonzalo Romero,Roma,Italia,0.025359576078728
+Gonzalo Romero,Granada,España,0.028387585162756
+Prestigio B,Sevilla,España,1
+José Luis,Granada,España,0.103448275862069
+José Luis,Jun,España,0.827586206896552
+José Luis,Jaén,España,0.068965517241379
+MT,Albacete,España,0.193215972520395
+MT,Cartagena,España,0.450837269214255
+MT,Valenciennes,Francia,0.01245169600687
+MT,El Puerto de Santa María,España,0.34349506225848
