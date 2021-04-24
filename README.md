@@ -1,4 +1,4 @@
-# Breve análisis de la movilidad
+# Breve análisis de movilidad estudiantes MHHD 2020-2021
 
 Este repositorio contiene el código fuente y datos usados en la realización del trabajo *"Breve análisis de la movilidad de los estudiantes del Máster de Historia y Humanidades Digitales de la UPO (2020-2021) mediante un grafo georreferenciado realizado en Gephi"*, realizado en el contexto de la asignatura *"Metodología para la investigación en Historia y Humanidades Digitales I"*, curso académico 2020-2021.
 
@@ -86,6 +86,11 @@ El script `resolve.py` hace uso de la librería `geopy` para obtener la latitud 
 
 La normalización de los periodos de tiempo está basada en la librería para análisis datos `pandas`.
 
+El script **no** acepta ningún parámetro de entrada. Los archivos de entrada y salida están *hard-coded* en el propio código.
+
 ### Script refactor.py
 
 El script `refactor.py` procesa el archivo `gephi-total.csv` y genera los archivos `gephi-nodes` y `gephi-edges.csv`, los cuales definen un grafo georreferenciado que puede ser representado usando Gephi.
+
+El script **no** acepta ningún parámetro de entrada. Los archivos de entrada y salida están *hard-coded* en el propio código.
+
